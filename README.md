@@ -25,6 +25,7 @@ if @record.save
 else
 ...
 end
+```
 - Call `render_analytics` in a sitewide template, eg. `application.html`
 ```
 ...
