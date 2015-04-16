@@ -6,6 +6,9 @@ This is ideal for triggering javascript snippets for event tracking.
 
 Output can be rendered as escaped text or html/js depending on environment to prevent tracking events firing during development.
 
+### Disclaimer
+This is alpha software (v0.0.1) which may have bugs and / or change with minimal warning. Use with care. Feel free to raise issues and / or pull requests.
+
 ## Installation
   1. Add this to your Gemfile:
     `gem 'flash_analytics', git: 'git://github.com/fylooi/flash_analytics.git'`
