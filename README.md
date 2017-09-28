@@ -38,7 +38,15 @@ end
 </head>
 ...
 ```
+
+- An `add_analytics_partial_now` version is also available. This version mirrors the behavior of `flash.now`.
+
 - `render_analytics` will render partials as html/js only in production by default. In other environments, partials will be rendered as escaped text wrapped in a hidden div block. To render partials as html/js in other environment, run `rails generate flash_analytics:install` and edit the generated configuration file in `/config/initializers/flash_analytics.rb`
+
+
+## Gotchas
+Only primitives (integer ids, strings) are supported when passing locals to the rendered partial. The flash is saved to the session by default, so passing an ActiveRecord object has a high chance of triggering an `ActionDispatch::Cookies::CookieOverflow` error.
+
 
 ## Testing
 Clone this repository and run `rake test`
