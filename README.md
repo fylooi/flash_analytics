@@ -7,7 +7,7 @@ This is ideal for triggering javascript snippets for event tracking.
 Output can be rendered as escaped text or html/js depending on environment to prevent tracking events firing during development.
 
 ### Disclaimer
-This is alpha software (v0.0.1) which may have bugs and / or change with minimal warning. Use with care. Feel free to raise issues and / or pull requests.
+The latest version is v0.1.0. This version may have bugs and / or change with minimal warning. Use with care. Feel free to raise issues and / or pull requests.
 
 ## Installation
   1. Add this to your Gemfile:
