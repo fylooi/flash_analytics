@@ -11,8 +11,11 @@ The latest version is v0.1.0. This version may have bugs and / or change with mi
 
 ## Installation
   1. Add this to your Gemfile:
-    `gem 'flash_analytics', git: 'git://github.com/fylooi/flash_analytics.git'`
+    `gem 'flash_analytics'`
   2. `bundle install`
+
+  3. You can also install the latest version from Github using:
+    `gem 'flash_analytics', git: 'git://github.com/fylooi/flash_analytics.git'`
 
 ## Usage
 - Create your analytics snippet in a partial, eg. `views/analytics/google/_record_created.html.erb`
