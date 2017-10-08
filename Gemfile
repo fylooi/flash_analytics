@@ -15,3 +15,4 @@ gemspec
 
 gem 'sqlite3'
 gem 'pry'
+gem 'rails-controller-testing'
