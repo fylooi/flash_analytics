@@ -31,11 +31,20 @@ class FlashHashTest < ActiveSupport::TestCase
   end
 end
 
-class DummiesControllerTest < ActionController::TestCase
-  test "should get test" do
-    get :test
-    assert_template :test
+class DummiesControllerTest < ActionDispatch::IntegrationTest
+  test "add_analytics_partial should render after redirect" do
+    get redirect_dummies_url
+
+    follow_redirect!
+    assert_template :result
     assert_template partial: 'analytics/_test_analytics_one'
     assert_template partial: 'analytics/_test_analytics_two'
+  end
+
+  test "add_analytics_partial_now should render in the current request" do
+    get render_now_dummies_url
+
+    assert_template :render_now
+    assert_template partial: 'analytics/_test_analytics_one'
   end
 end
